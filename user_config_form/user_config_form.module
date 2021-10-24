@@ -1,0 +1,26 @@
+<?php
+
+/**
+ *  run cron
+ */
+function user_config_form_preprocess_node(&$variables){
+
+  $data = \Drupal::service('user_config_form.custom_services')->getData();
+  var_dump($data);
+  exit;
+
+}
+
+// /**
+//  * Implements hook_theme().
+//  */
+// function user_config_form_theme() {
+//   $data = \Drupal::service('user_config_form.custom_services')->getData();
+//   return [
+//     'my_block' => [
+//       'variables' => [
+//         'data' => [$data],
+//       ],
+//     ],
+//   ];
+// }

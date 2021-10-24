@@ -1,0 +1,7 @@
+user_config_form.form:
+ path: '/myform'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\user_config_form\Form\CustomForm'
+ requirements:
+   _permission: 'access content'

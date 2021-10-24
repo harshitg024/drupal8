@@ -1,0 +1,4 @@
+services:
+  user_config_form.custom_services:
+    class: Drupal\user_config_form\CustomService
+    arguments: ['@datetime.time']
